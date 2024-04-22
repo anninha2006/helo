@@ -1,24 +1,17 @@
 ﻿namespace helo;
 
-public partial class MainPage : ContentPage
+public partial class MainPage
 {
-	int count = 0;
-
-	public MainPage()
+	const string Url = "https://api.hgbrasil.com/weather?woeid=455927&key="
+	results resposta;
+	void Atualiza Tempo()
 	{
-		InitializeComponent();
-	}
-
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
-
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
-
-		SemanticScreenReader.Announce(CounterBtn.Text);
+		try
+		{
+			var httpcliente= new HttpClient();
+			var response = await HttpCliente();
+			if (response.Is Success Status Code)
+		}
 	}
 }
 
