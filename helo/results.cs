@@ -6,7 +6,7 @@ public class Results
 	public string Description {get; set;}
     public int Date {get; set;}
     public int Condition_cod {get; set;}
-    public int img_id {get; set;}
+    public int Img_id {get; set;}
 	public string Currently {get; set;}
 	public string City {get; set;}
 	public int Humidity {get; set;}

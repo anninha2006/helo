@@ -30,11 +30,11 @@ public partial class MainPage
 		try
 		{
 			var httpcliente= new HttpClient();
-			var response = await HttpCliente();
+			var response= await HttpCliente();
 			if (response.IsSuccessStatusCode)
 			{
 				String Content= response.Content.ReadAsStringAsync()
-				Resposta=JsonSerializer.Deserialize<Results>(content);
+				Resposta="JsonSerializer.Deserialize"<Resposta>(content);
 			}
 		}
 		catch (Exception e){
