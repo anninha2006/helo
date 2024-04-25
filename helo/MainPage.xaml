@@ -3,5 +3,153 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="helo.MainPage">
 
-   
+        <Grid>
+             <Grid.RowDefinitons>
+                 <RowDefiniton Height= "*"/>
+                 <RowDefiniton Height= "80"/> 
+                 <RowDefiniton Height= "80"/>
+                 <RowDefiniton Height= "*"/> 
+                 <RowDefiniton Height= "200"/>
+            </Grid.RowDefinitons>
+            <Grid.ColumnDefinitions>
+                 <ColumnDefinition Width= "*"/>
+                 <ColumnDefinition Width= "*"/> 
+                 <ColumnDefinition Width= "*"/>
+            </Grid.ColumnDefinitions>
+          <Frame Grid.Row= "1"
+                 Grid.Column= "0">
+                <Grid>
+            <Grid.RowDefinitons>
+                <RowDefiniton Height= "*"/>
+                <RowDefiniton Height= "*"/>
+            </Grid.RowDefinitons/>
+             <Grid.ColumnDefinitions>
+                 <ColumnDefinition= Width= "*"/>
+                 <ColumnDefinition= Width= "*"/>
+            <Grid.ColumnDefinitions/>
+              <Label Text= "Chuva"
+                     Grid.Row= "0"
+                     Grid.Column= "0"/>
+              <Label Text= "Umidade"
+                     Grid= "1"
+                     Grid= "0"/>
+              <Label x.Name= "LabelChuva"
+                     Grid.Row= "0"
+                     Grid.Column= "1"/>
+              </Grid>
+             </Frame>
+             
+          <Frame Grid.Row= "2"
+                 Grid.Column= "1">
+                <Grid>
+            <Grid.RowDefinitons>
+                <RowDefiniton Height= "*"/>
+                <RowDefiniton Height= "*"/>
+            </Grid.RowDefinitons/>
+             <Grid.ColumnDefinitions>
+                 <ColumnDefinition= Width= "*"/>
+                 <ColumnDefinition= Width= "*"/>
+            <Grid.ColumnDefinitions/>
+              <Label Text= "Amanhecer"
+                     Grid.Row= "0"
+                     Grid.Column= "0"/>
+              <Label Text= "Umidade"
+                     Grid= "1"
+                     Grid= "0"/>
+              <Label x.Name= "LabelSol"
+                     Grid.Row= "0"
+                     Grid.Column= "1"/>
+              </Grid>
+             </Frame> 
+
+           <Frame Grid.Row= "3"
+                 Grid.Column= "2">
+                <Grid>
+            <Grid.RowDefinitons>
+                <RowDefiniton Height= "*"/>
+                <RowDefiniton Height= "*"/>
+            </Grid.RowDefinitons/>
+             <Grid.ColumnDefinitions>
+                 <ColumnDefinition= Width= "*"/>
+                 <ColumnDefinition= Width= "*"/>
+            <Grid.ColumnDefinitions/>
+              <Label Text= "Força"
+                     Grid.Row= "0"
+                     Grid.Column= "0"/>
+              <Label Text= "Umidade"
+                     Grid= "1"
+                     Grid= "0"/>
+              <Label x.Name= "LabelVento"
+                     Grid.Row= "0"
+                     Grid.Column= "1"/>
+              </Grid>
+             </Frame>    
+
+           <Frame Grid.Row= "4"
+                 Grid.Column= "3">
+                <Grid>
+            <Grid.RowDefinitons>
+                <RowDefiniton Height= "*"/>
+                <RowDefiniton Height= "*"/>
+            </Grid.RowDefinitons/>
+             <Grid.ColumnDefinitions>
+                 <ColumnDefinition= Width= "*"/>
+                 <ColumnDefinition= Width= "*"/>
+            <Grid.ColumnDefinitions/>
+              <Label Text= "Fase"
+                     Grid.Row= "0"
+                     Grid.Column= "0"/>
+              <Label Text= "Umidade"
+                     Grid= "1"
+                     Grid= "0"/>
+              <Label x.Name= "LabelLua"
+                     Grid.Row= "0"
+                     Grid.Column= "1"/>
+              </Grid>
+             </Frame>                 
+
+        <Frame Grid.Row= "2"
+                 Grid.Column= "1">
+                <Grid>
+            <Grid.RowDefinitons>
+                <RowDefiniton Height= "*"/>
+                <RowDefiniton Height= "*"/>
+            </Grid.RowDefinitons/>
+             <Grid.ColumnDefinitions>
+                 <ColumnDefinition= Width= "*"/>
+                 <ColumnDefinition= Width= "*"/>
+            <Grid.ColumnDefinitions/>
+              <Label Text= "Grau"
+                     Grid.Row= "0"
+                     Grid.Column= "0"/>
+              <Label Text= "Tempo"
+                     Grid= "1"
+                     Grid= "0"/>
+              <Label Text= "Apucarana, PR"
+                     Grid= "1"
+                     Grid= "0"/>
+              <Label x.Name= "LabelGrau"
+                     Grid.Row= "0"
+                     Grid.Column= "1"/>
+              </Grid>
+             </Frame>   
+
+             <Imagem x:Name="Labelchuva"
+                    Source="ceu_chuvoso"/>
+
+             <Imagem x:Name="Labelsol"
+                    Source="ceu_bonitinho"/> 
+
+             <Imagem x:Name="Labelnublado"
+                    Source="ceu_nublado"/>
+
+             <Image x:Name="Labelchuvosa"
+                    Source="noite_chuvosa"/>
+
+             <Image x:Name="Labelnoite"
+                    Source="noite_bonitinha"/>
+
+             <Image x:Name="Labelntnublada"
+                    Source="noite_nublada"/>                                
+
 </ContentPage>
